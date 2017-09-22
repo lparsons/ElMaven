@@ -5,6 +5,7 @@
 #include "globals.h"
 #include <ctime>
 #include <sstream>
+#include "ui_mainwindow.h"
 #include "mavenparameters.h"
 #include "SRMList.h"
 #include "scatterplot.h"
@@ -113,7 +114,7 @@ private:
     void run();
 };
 
-class MainWindow: public QMainWindow {
+class MainWindow: public QMainWindow, public Ui_MainWindow {
 Q_OBJECT
 
 public:

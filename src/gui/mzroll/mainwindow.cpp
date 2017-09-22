@@ -134,6 +134,7 @@ using namespace mzUtils;
 
  MainWindow::MainWindow(QWidget *parent) :
 		QMainWindow(parent) {
+	setupUi(this);
 	connect( this, SIGNAL (reBoot()), this, SLOT (slotReboot()));
 	m_value=0; 	
 	mainwindowDummy = (long long) this;
@@ -283,17 +284,17 @@ using namespace mzUtils;
 	//progress Bar on the bottom of the page
 	statusText = new QLabel(this);
 	statusText->setOpenExternalLinks(true);
-	statusBar()->addPermanentWidget(statusText, 1);
+	Ui_MainWindow::statusBar->addPermanentWidget(statusText, 1);
 
 	progressBar = new QProgressBar(this);
 	progressBar->hide();
-	statusBar()->addPermanentWidget(progressBar);
+	Ui_MainWindow::statusBar->addPermanentWidget(progressBar);
 
 	QToolButton *btnBugs = new QToolButton(this);
 	btnBugs->setIcon(QIcon(rsrcPath + "/bug.png"));
 	btnBugs->setToolTip(tr("Feedback!"));
 	connect(btnBugs, SIGNAL(clicked()), SLOT(reportBugs()));
-	statusBar()->addPermanentWidget(btnBugs, 0);
+	Ui_MainWindow::statusBar->addPermanentWidget(btnBugs, 0);
 
 	setWindowIcon(QIcon(":/images/icon.png"));
 
@@ -2046,12 +2047,12 @@ void MainWindow::exportSVG() {
 	painter.end();
 
 	QApplication::clipboard()->setPixmap(image);
-	statusBar()->showMessage("EIC Image copied to Clipboard");
+	Ui_MainWindow::statusBar->showMessage("EIC Image copied to Clipboard");
 }
 
 void MainWindow::setStatusText(QString text) {
 	statusText->setText(text);
-	//statusBar()->showMessage(text,500);
+	//Ui_MainWindow::statusBar->showMessage(text,500);
 }
 
 void MainWindow::setProgressBar(QString text, int progress, int totalSteps) {
@@ -2376,8 +2377,8 @@ void MainWindow::closeEvent(QCloseEvent *event) {
  * places in the window
  */
 void MainWindow::createMenus() {
-	QMenu* fileMenu = menuBar()->addMenu(tr("&File"));
-	QMenu* widgetsMenu = menuBar()->addMenu(tr("&Widgets"));
+	QMenu* fileMenu = Ui_MainWindow::menuBar->addMenu(tr("&File"));
+	QMenu* widgetsMenu = Ui_MainWindow::menuBar->addMenu(tr("&Widgets"));
 
 	QAction* openAct = new QAction(QIcon(":/images/open.png"),
 			tr("&Load Samples|Projects|Peaks"), this);
@@ -2443,7 +2444,7 @@ void MainWindow::createMenus() {
     al->setCheckable(true);  al->setChecked(false);
     connect(al,SIGNAL(toggled(bool)),peptideFragmentation,SLOT(setVisible(bool)));
 
-	menuBar()->show();
+	Ui_MainWindow::menuBar->show();
 }
 
 QToolButton* MainWindow::addDockWidgetButton(QToolBar* bar,
