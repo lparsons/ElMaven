@@ -2377,44 +2377,16 @@ void MainWindow::closeEvent(QCloseEvent *event) {
  * places in the window
  */
 void MainWindow::createMenus() {
-	QMenu* fileMenu = Ui_MainWindow::menuBar->addMenu(tr("&File"));
 	QMenu* widgetsMenu = Ui_MainWindow::menuBar->addMenu(tr("&Widgets"));
-
-	QAction* openAct = new QAction(QIcon(":/images/open.png"),
-			tr("&Load Samples|Projects|Peaks"), this);
-	openAct->setShortcut(tr("Ctrl+O"));
-	openAct->setToolTip(tr("Open an existing file"));
-	connect(openAct, SIGNAL(triggered()), this, SLOT(open()));
-	fileMenu->addAction(openAct);
-
-	QAction* loadModel = new QAction(tr("Load Classification Model"), this);
-	connect(loadModel, SIGNAL(triggered()), SLOT(loadModel()));
-	fileMenu->addAction(loadModel);
-
-	QAction* loadCompoundsFile = new QAction(tr("Load Compound List"), this);
-	connect(loadCompoundsFile, SIGNAL(triggered()), SLOT(loadCompoundsFile()));
-	fileMenu->addAction(loadCompoundsFile);
-
-	QAction* saveProjectFile = new QAction(tr("Save Project As"), this);
-	saveProjectFile->setShortcut(tr("Ctrl+S"));
-	connect(saveProjectFile, SIGNAL(triggered()), projectDockWidget,
+	
+	connect(actionOpen, SIGNAL(triggered()), this, SLOT(open()));
+	connect(actionLoad_Classification_Model, SIGNAL(triggered()), SLOT(loadModel()));
+	connect(actionLoad_Compound_Db, SIGNAL(triggered()), SLOT(loadCompoundsFile()));
+	connect(actionSave_As, SIGNAL(triggered()), projectDockWidget,
 			SLOT(saveProject()));
-	fileMenu->addAction(saveProjectFile);
-
-	QAction* settingsAct = new QAction(tr("Options"), this);
-	settingsAct->setToolTip(tr("Set program options"));
-	connect(settingsAct, SIGNAL(triggered()), settingsForm, SLOT(show()));
-	fileMenu->addAction(settingsAct);
-
-	QAction* reportBug = new QAction(tr("Report Bugs!"), this);
-	connect(reportBug, SIGNAL(triggered()), SLOT(reportBugs()));
-	fileMenu->addAction(reportBug);
-
-	QAction* exitAct = new QAction(tr("E&xit"), this);
-	exitAct->setShortcut(tr("Ctrl+Q"));
-	exitAct->setToolTip(tr("Exit the application"));
-	connect(exitAct, SIGNAL(triggered()), this, SLOT(close()));
-	fileMenu->addAction(exitAct);
+	connect(actionReport_Bugs, SIGNAL(triggered()), SLOT(reportBugs()));
+	connect(actionAuto_Save, SIGNAL(triggered()), this, SLOT(autosaveMzRoll()));
+	connect(actionExit, SIGNAL(triggered()), this, SLOT(close()));
 
 	QAction* hideWidgets = new QAction(tr("Hide Widgets"), this);
 	hideWidgets->setShortcut(tr("F11"));
