@@ -149,8 +149,8 @@
         <string>...</string>
        </property>
        <property name="icon">
-        <iconset resource="elmavengui.qrc">
-         <normaloff>:/mainwindow/Images/setupload.png</normaloff>:/mainwindow/Images/setupload.png</iconset>
+        <iconset resource="../mzroll.qrc">
+         <normaloff>:/images/setupload.png</normaloff>:/images/setupload.png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -179,8 +179,8 @@
         <string>...</string>
        </property>
        <property name="icon">
-        <iconset resource="elmavengui.qrc">
-         <normaloff>:/mainwindow/Images/checkuncheck.png</normaloff>:/mainwindow/Images/checkuncheck.png</iconset>
+        <iconset resource="../mzroll.qrc">
+         <normaloff>:/images/checkuncheck.png</normaloff>:/images/checkuncheck.png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -202,8 +202,8 @@
         <string>...</string>
        </property>
        <property name="icon">
-        <iconset resource="elmavengui.qrc">
-         <normaloff>:/mainwindow/Images/fileopen.png</normaloff>:/mainwindow/Images/fileopen.png</iconset>
+        <iconset resource="../mzroll.qrc">
+         <normaloff>:/images/fileopen.png</normaloff>:/images/fileopen.png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -237,8 +237,8 @@
         <string>...</string>
        </property>
        <property name="icon">
-        <iconset resource="elmavengui.qrc">
-         <normaloff>:/mainwindow/Images/colorfill.png</normaloff>:/mainwindow/Images/colorfill.png</iconset>
+        <iconset resource="../mzroll.qrc">
+         <normaloff>:/images/colorfill.png</normaloff>:/images/colorfill.png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -260,8 +260,8 @@
         <string>...</string>
        </property>
        <property name="icon">
-        <iconset resource="elmavengui.qrc">
-         <normaloff>:/mainwindow/Images/filesave.png</normaloff>:/mainwindow/Images/filesave.png</iconset>
+        <iconset resource="../mzroll.qrc">
+         <normaloff>:/images/filesave.png</normaloff>:/images/filesave.png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -283,8 +283,8 @@
         <string>...</string>
        </property>
        <property name="icon">
-        <iconset resource="elmavengui.qrc">
-         <normaloff>:/mainwindow/Images/delete.png</normaloff>:/mainwindow/Images/delete.png</iconset>
+        <iconset resource="../mzroll.qrc">
+         <normaloff>:/images/delete.png</normaloff>:/images/delete.png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -306,8 +306,8 @@
         <string>...</string>
        </property>
        <property name="icon">
-        <iconset resource="elmavengui.qrc">
-         <normaloff>:/mainwindow/Images/blank sample.png</normaloff>:/mainwindow/Images/blank sample.png</iconset>
+        <iconset resource="../mzroll.qrc">
+         <normaloff>:/images/blank sample.png</normaloff>:/images/blank sample.png</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -383,9 +383,9 @@
     <bool>true</bool>
    </property>
    <property name="icon">
-    <iconset resource="elmavengui.qrc">
-     <normaloff>:/mainwindow/Images/fileopen.png</normaloff>
-     <normalon>Images/fileopen.png</normalon>:/mainwindow/Images/fileopen.png</iconset>
+    <iconset resource="../mzroll.qrc">
+     <normaloff>:/images/fileopen.png</normaloff>
+     <normalon>Images/fileopen.png</normalon>:/images/fileopen.png</iconset>
    </property>
    <property name="text">
     <string>Open</string>
@@ -403,7 +403,7 @@
   <action name="actionAlign">
    <property name="icon">
     <iconset>
-     <normalon>:/mainwindow/Images/textcenter.png</normalon>
+     <normalon>:/images/textcenter.png</normalon>
     </iconset>
    </property>
    <property name="text">
@@ -416,7 +416,7 @@
   <action name="actionPeaks">
    <property name="icon">
     <iconset>
-     <normalon>:/mainwindow/Images/featuredetect.png</normalon>
+     <normalon>:/images/featuredetect.png</normalon>
     </iconset>
    </property>
    <property name="text">
@@ -432,7 +432,7 @@
   <action name="actionMatch_Spectra">
    <property name="icon">
     <iconset>
-     <normalon>:/mainwindow/Images/spectra_search.png</normalon>
+     <normalon>:/images/spectra_search.png</normalon>
     </iconset>
    </property>
    <property name="text">
@@ -445,7 +445,7 @@
   <action name="actionSettings">
    <property name="icon">
     <iconset>
-     <normalon>:/mainwindow/Images/settings.png</normalon>
+     <normalon>:/images/settings.png</normalon>
     </iconset>
    </property>
    <property name="text">
@@ -458,7 +458,7 @@
   <action name="actionSamples_Widget">
    <property name="icon">
     <iconset>
-     <normalon>:/mainwindow/Images/samples.png</normalon>
+     <normalon>:/images/samples.png</normalon>
     </iconset>
    </property>
    <property name="text">
@@ -471,7 +471,7 @@
   <action name="actionCompound_Widget">
    <property name="icon">
     <iconset>
-     <normalon>:/mainwindow/Images/molecule.png</normalon>
+     <normalon>:/images/molecule.png</normalon>
     </iconset>
    </property>
    <property name="text">
@@ -484,7 +484,7 @@
   <action name="actionMass_Spectra">
    <property name="icon">
     <iconset>
-     <normalon>:/mainwindow/Images/spectra.png</normalon>
+     <normalon>:/images/spectra.png</normalon>
     </iconset>
    </property>
    <property name="text">
@@ -497,7 +497,7 @@
   <action name="actionAlignment_Visualization_Widget">
    <property name="icon">
     <iconset>
-     <normalon>:/mainwindow/Images/alignmentViz.png</normalon>
+     <normalon>:/images/alignmentViz.png</normalon>
     </iconset>
    </property>
    <property name="text">
@@ -510,7 +510,7 @@
   <action name="actionAlignment_Polynomial_Fit_Plot_Widget">
    <property name="icon">
     <iconset>
-     <normalon>:/mainwindow/Images/alignmentPolyViz.png</normalon>
+     <normalon>:/images/alignmentPolyViz.png</normalon>
     </iconset>
    </property>
    <property name="text">
@@ -523,7 +523,7 @@
   <action name="actionAlignment_Visualization_Widget_For_All_Groups">
    <property name="icon">
     <iconset>
-     <normalon>:/mainwindow/Images/alignmentVizAllGroups.png</normalon>
+     <normalon>:/images/alignmentVizAllGroups.png</normalon>
     </iconset>
    </property>
    <property name="text">
@@ -536,7 +536,7 @@
   <action name="actionIsotopes_Widget">
    <property name="icon">
     <iconset>
-     <normalon>:/mainwindow/Images/isotope.png</normalon>
+     <normalon>:/images/isotope.png</normalon>
     </iconset>
    </property>
    <property name="text">
@@ -549,7 +549,7 @@
   <action name="actionMatch_Compound_Widget">
    <property name="icon">
     <iconset>
-     <normalon>:/mainwindow/Images/findcompound.png</normalon>
+     <normalon>:/images/findcompound.png</normalon>
     </iconset>
    </property>
    <property name="text">
@@ -562,7 +562,7 @@
   <action name="actionCovariants_Widget">
    <property name="icon">
     <iconset>
-     <normalon>:/mainwindow/Images/covariants.png</normalon>
+     <normalon>:/images/covariants.png</normalon>
     </iconset>
    </property>
    <property name="text">
@@ -575,7 +575,7 @@
   <action name="actionNotes_Widget">
    <property name="icon">
     <iconset>
-     <normalon>:/mainwindow/Images/note.png</normalon>
+     <normalon>:/images/note.png</normalon>
     </iconset>
    </property>
    <property name="text">
@@ -588,7 +588,7 @@
   <action name="actionSRM_List_Widget">
    <property name="icon">
     <iconset>
-     <normalon>:/mainwindow/Images/qqq.png</normalon>
+     <normalon>:/images/qqq.png</normalon>
     </iconset>
    </property>
    <property name="text">
@@ -601,7 +601,7 @@
   <action name="actionGallery_Widget">
    <property name="icon">
     <iconset>
-     <normalon>:/mainwindow/Images/gallery.png</normalon>
+     <normalon>:/images/gallery.png</normalon>
     </iconset>
    </property>
    <property name="text">
@@ -614,7 +614,7 @@
   <action name="actionScatter_Plot_Widget">
    <property name="icon">
     <iconset>
-     <normalon>:/mainwindow/Images/scatterplot.png</normalon>
+     <normalon>:/images/scatterplot.png</normalon>
     </iconset>
    </property>
    <property name="text">
@@ -627,7 +627,7 @@
   <action name="actionBookmark_Table">
    <property name="icon">
     <iconset>
-     <normalon>:/mainwindow/Images/showbookmarks.png</normalon>
+     <normalon>:/images/showbookmarks.png</normalon>
     </iconset>
    </property>
    <property name="text">
@@ -643,7 +643,7 @@
   <tabstop>graphicsView</tabstop>
  </tabstops>
  <resources>
-  <include location="elmavengui.qrc"/>
+  <include location="../mzroll.qrc"/>
  </resources>
  <connections/>
 </ui>
