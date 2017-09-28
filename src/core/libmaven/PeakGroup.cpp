@@ -787,3 +787,8 @@ void PeakGroup::setSelectedSamples(vector<mzSample*> vsamples){
         }
     }
 }
+void PeakGroup::addPeak(const Peak &peak)
+{
+	peaks.push_back(peak);
+	peaks.back().groupNum = groupId;
+}
