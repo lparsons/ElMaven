@@ -2292,8 +2292,8 @@ void MainWindow::readSettings() {
     if (!settings->contains("distYWeight"))
 		settings->setValue("distYWeight", 1);
 
-    if (!settings->contains("overlapWeight"))
-		settings->setValue("overlapWeight", 1);
+    if (!settings->contains("minPeakRtDiff"))
+		settings->setValue("minPeakRtDiff", 0);
 
     if (!settings->contains("useOverlap"))
 		settings->setValue("useOverlap", 2);
