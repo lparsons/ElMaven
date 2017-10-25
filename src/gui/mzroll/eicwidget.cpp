@@ -705,7 +705,10 @@ void EicWidget::addMergedEIC() {
 
 	EicLine* line = new EicLine(0, scene());
 
-	EIC* eic = EIC::eicMerge(eicParameters->eics);
+	EIC* eic = eicParameters->eics[0];
+	if (eicParameters->eics.size() > 1) {
+		EIC* eic = EIC::eicMerge(eicParameters->eics);
+	}
 	eic->setSmootherType((EIC::SmootherType) eic_smoothingAlgorithm);
 	eic->setBaselineSmoothingWindow(baseline_smoothing);
 	eic->setBaselineDropTopX(baseline_quantile);
